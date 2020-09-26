@@ -31,22 +31,15 @@ a { text-decoration: none; }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #656565;
+    background-color: #F9FBFE;
 }
 
 /* // */
 
 /* Definisi Warna */
-.warna-utama {
-    color: #415B81;
-}
+.warna-utama { color: #415B81; }
 
-.warna-orange {
-    color: #F29100;
-}
-
-.bg-putih {
-    background-color: white;
-}
+.bg-putih { background-color: white; }
 
 .teks-putih { color: white; }
 .teks-oren { color: #F29100; }
@@ -66,6 +59,7 @@ body {
 
 /* style */
 .teks-tebal { font-weight: 700; }
+.teks-semi-tebal { font-weight: 500; }
 
 /* Layout */
 .hilang-dulu { display: none; }
@@ -161,8 +155,8 @@ body {
 .l-9 { padding: 40px; }
 
 .container {
-    background-color: #F9FBFE;
     position: relative;
+    max-width: 1024px;
 }
 
 /* Box  */
@@ -190,10 +184,8 @@ aside {
     margin: 24px 0;
 }
 
-.badge {
+#lencana {
     border-top: #536A8D 1px solid;
-    display: flex;
-    justify-content: center;
 }
 
 .box-aside {
@@ -220,6 +212,11 @@ aside {
     width: 100%;
 }
 
+#kategori {
+    background-color: #5CB768;
+    width: 86px;
+}
+
 @media screen and (min-width: 993px) {
    #menu-hp {
        display: none;
@@ -240,54 +237,11 @@ aside {
     top: -22px;
 }
 
-.box-rekap {
-    background-color: #4E84CE;
-    width: 50%;
-}
-
-/* progres belajar */
-
-.progres-title {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-.progres-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.progres-item {
-    height: 220px;
-    width: 32%;
-    background-color: white;
-}
-
-.progres-item .baru-item {
-    background-color: white;
-    overflow: hidden;
-}
-
-.item-content .content {
-    line-height: 19px;
-}
-
-.baru-item {
-    width: 49%;
-    background-color: white;
-}
-
-/* end of progress belajar */
-
-#widget {
-    width: 270px;
-}
-
-.category > p {
-    width: 86px;
-    border-radius: 8px;
-    background-color: #5CB768;
+/* mobile */
+@media screen and (max-width: 321px) {
+   #notif {
+       margin-left: 4px;
+   }
 }
 
 /* mobile */
@@ -305,18 +259,17 @@ aside {
 .left {
     width: 100%;
 }
-.gambar-ilustrasi {
-    position: static;
-}
-header {
-    display: block;
-    position: fixed;
-    top: 24px;
-    left: 12px;
+
+.dua-tiga {
+    width: 100%;
 }
 
-.widget {
-    width: 100% !important;
+#semangat {
+    text-align: center;
+}
+
+.gambar-ilustrasi {
+    position: static;
 }
 
 }
@@ -352,13 +305,14 @@ header {
         display: block;
     }
 
-    .author {
-        margin-top: 12px;
-    }
-
     .dashboard {
         display: none;
     }
+
+    #widget {
+    margin-left: 0;
+    margin-top: 24px;;
+}
 
 }
 

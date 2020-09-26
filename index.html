@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>eCourse - Dede Iskandar</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="flex">
 
-<header class="hilang-dulu">
-    <h1>eCourse</h1>
-</header>
-
-<aside class="teks-putih teks-tengah l-8">
-    <h1 class="teks-7 teks-tebal">eCourse</h1>
+<aside id="identitas" class="teks-putih teks-tengah l-8">
     <div class="avatar">
         <img src="/assets/images/dd.jpg" alt="" width="160px">
     </div>
     <h2 class="teks-7 teks-tebal bb-3">Dede Iskandar</h2>
     <div class="teks-1">Bergabung Sejak Oktober 2015</div>
-    <ul class="badge ba-6 la-5">
+    <ul id="lencana" class="flex flex-tengah ba-6 la-5">
         <li class="bki-3">
             <img src="/assets/images/badge/1.svg" alt="">
         </li>
@@ -44,10 +39,10 @@
 </aside>
 
 <div class="container l-7">
-    <nav class="flex flex-pinggir bb-7">
-        <h1 class="teks-tebal teks-7 warna-utama">Dashboard</h1>
+    <header class="flex flex-pinggir bb-7">
+        <h1 class="teks-tebal teks-7 warna-utama">eCourse</h1>
         <ul class="flex">
-            <li>Pagi, <span class="warna-utama bold">Dede Iskandar </span> 
+            <li>Pagi, <span class="teks-tebal warna-utama">Dede Iskandar </span> 
             <svg width="8.438" height="4.984">
                 <g data-name="Group 11">
                     <path data-name="Path 144"
@@ -57,7 +52,7 @@
             </svg>
 
             </li>
-            <li class="bki-6">
+            <li id="notif" class="bki-6">
                 <svg width="12.837" height="15.405">
                     <path data-name="Path 142"
                         d="M12.791 12.993l-1.1-1.837a5.457 5.457 0 01-.778-2.807v-1.61a4.5 4.5 0 00-3.209-4.3V1.284a1.284 1.284 0 10-2.567 0v1.152a4.5 4.5 0 00-3.209 4.3v1.613a5.46 5.46 0 01-.777 2.807l-1.1 1.837a.321.321 0 00.275.487h12.2a.321.321 0 00.275-.486z"
@@ -66,7 +61,7 @@
             </li>
 
         </ul>
-    </nav>
+    </header>
     <!-- End of top-nav -->
 
     <main class="flex">
@@ -124,26 +119,28 @@
             
         </section>
 
-        <section id="widget" >
-            <div  id="agenda" class="bki-7 bg-putih l-6 bulat bayangan">
-                <div class="title">
-                    <h3 class="warna-utama">Agenda Selanjutnya</h3>
+        <section id="widget" class="bki-7">
+            <div  id="agenda" class="bg-putih l-6 bulat bayangan">
+                <div class="bb-4">
+                    <h3 class="warna-utama teks-semi-tebal">Agenda Selanjutnya</h3>
                 </div>
                 <div class="">
                     <ul>
                         <li>
-                            <div class="category">
-                                <p>Online Session</p>
+                            <div class="teks-2 teks-semi-tebal">
+                                <p id="kategori" class="teks-putih l-1 bulat teks-tengah bb-1">Online Session</p>
                             </div>
-                            <h4 class="warna-utama bold">Belajar Dasar Pemrograman Web</h4>
-                            <p>Rabu, 30 September 2020</p>
-                            <p>12:00 - 14:30 WIB</p>
+                            <h4 class="bb-1 warna-utama teks-tebal">Belajar Dasar Pemrograman Web</h4>
+                            <div class="bb-1 teks-2">Rabu, 30 September 2020</div>
+                            <div class="bb-1 teks-2">12:00 - 14:30 WIB</div>
                         </li>
                     </ul>
                 </div>
-                <div class="widget-footer">
-                    <p class="view-all"><a href="#"> Lihat Semua ></a></p>
+
+                <div class="ba-6 teks-3">
+                    <a href="#"> Lihat Semua ></a>
                 </div>
+
             </div>
         </section>
     </main>
@@ -161,8 +158,8 @@
 
 <!-- mobile nav -->
 <nav id="menu-hp">
-    <ul class="flex flex-tengah">
-        <li class="menu">
+    <ul class="flex flex-tengah l-5">
+        <li class="menu bki-3">
             <a href="#">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="26px">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
@@ -171,7 +168,7 @@
                 Beranda
             </a>
         </li>
-        <li class="menu">
+        <li class="menu bki-3">
             <a href="#">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="26px">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
@@ -179,7 +176,7 @@
                 Belajar
             </a>    
         </li>
-        <li class="menu">
+        <li class="menu bki-3">
             <a href="#agenda">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="26">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -188,7 +185,7 @@
                 Agenda
             </a>
         </li>
-        <li class="menu">
+        <li class="menu bki-3">
             <a href="#">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="26px">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
@@ -197,7 +194,7 @@
                 Forum
             </a>
         </li>
-        <li class="menu">
+        <li class="menu bki-3">
             <a href="#">
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" width="26px">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
