@@ -73,6 +73,7 @@ body {
 .flex-tengah { justify-content: center; }
 
 .flex-pinggir { justify-content: space-between; }
+.flex-sisi-pinggir { justify-content: space-evenly; }
 
 .setengah { width: 49%; }
 .satu-tiga { width: 32%; }
