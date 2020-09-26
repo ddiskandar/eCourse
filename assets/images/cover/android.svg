@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 184">
+  <rect id="Rectangle_443" data-name="Rectangle 443" width="490" height="184" fill="#86f38b"/>
+  <g id="android" transform="translate(153.273 33)">
+    <g id="Group_12" data-name="Group 12" transform="translate(42.727 0)">
+      <path id="Path_146" data-name="Path 146" d="M50.1,170.787a7.373,7.373,0,0,0-7.373,7.373v34.409a7.373,7.373,0,0,0,14.747,0V178.16A7.373,7.373,0,0,0,50.1,170.787Z" transform="translate(-42.727 -131.435)" fill="#4caf50"/>
+      <path id="Path_147" data-name="Path 147" d="M412.766,170.787a7.373,7.373,0,0,0-7.373,7.373v34.409a7.373,7.373,0,0,0,14.747,0V178.16A7.373,7.373,0,0,0,412.766,170.787Z" transform="translate(-321.829 -131.435)" fill="#4caf50"/>
+      <path id="Path_148" data-name="Path 148" d="M184.588,170.787H130.518a2.458,2.458,0,0,0-2.458,2.458v39.324a12.289,12.289,0,0,0,9.831,12.043v17.45a7.373,7.373,0,1,0,14.747,0v-17.2h9.831v17.2a7.373,7.373,0,1,0,14.747,0v-17.45a12.289,12.289,0,0,0,9.831-12.043V173.245A2.458,2.458,0,0,0,184.588,170.787Z" transform="translate(-108.398 -131.435)" fill="#4caf50"/>
+      <path id="Path_149" data-name="Path 149" d="M175.42,10.213l5.992-5.987A2.458,2.458,0,1,0,178,.69l-.06.06-6.98,6.98a33.638,33.638,0,0,0-26.8,0L137.172.745A2.458,2.458,0,0,0,133.7,4.221l5.987,5.992a25.939,25.939,0,0,0-11.625,21.766,2.458,2.458,0,0,0,2.458,2.458h54.071a2.458,2.458,0,0,0,2.458-2.458A25.94,25.94,0,0,0,175.42,10.213Z" transform="translate(-108.397 0)" fill="#4caf50"/>
+    </g>
+    <g id="Group_13" data-name="Group 13" transform="translate(77.136 19.69)">
+      <circle id="Ellipse_31" data-name="Ellipse 31" cx="2.458" cy="2.458" r="2.458" fill="#fafafa"/>
+      <circle id="Ellipse_32" data-name="Ellipse 32" cx="2.458" cy="2.458" r="2.458" transform="translate(24.577)" fill="#fafafa"/>
+    </g>
+  </g>
+</svg>
