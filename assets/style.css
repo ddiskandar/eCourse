@@ -63,7 +63,7 @@ body {
 .teks-semi-tebal { font-weight: 500; }
 
 /* Layout */
-.hilang-dulu { display: none; }
+.hilang { display: none; }
 
 .flex { display: flex; }
 
@@ -230,6 +230,10 @@ aside {
     width: 100%;
 }
 
+#identitas {
+    display: block;
+}
+
 #kategori {
     background-color: #5CB768;
     width: 86px;
@@ -252,6 +256,10 @@ img:hover {
 
 @media screen and (min-width: 993px) {
    #menu-hp {
+       display: none;
+   }
+
+   #identitas {
        display: none;
    }
     
