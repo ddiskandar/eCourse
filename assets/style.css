@@ -239,6 +239,17 @@ aside {
     width: 270px;
 }
 
+img:hover {
+    filter: alpha(opacity=50);
+        opacity: 0.5;
+        -webkit-transition: opacity .15s ease-in-out;
+        -moz-transition: opacity .15s ease-in-out;
+        -ms-transition: opacity .15s ease-in-out;
+        -o-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 993px) {
    #menu-hp {
        display: none;
