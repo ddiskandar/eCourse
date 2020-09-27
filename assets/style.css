@@ -274,6 +274,10 @@ aside {
     position: static;
 }
 
+footer {
+        display: block !important;
+    }
+
 }
     
 /* Small devices (landscape phones, less than 768px) */
@@ -302,19 +306,14 @@ aside {
         margin-left: 0;
     }
 
-    footer {
-        margin-bottom: 120px;
-        display: block;
-    }
-
-    .dashboard {
-        display: none;
-    }
-
     #widget {
     margin-left: 0;
-    margin-top: 24px;;
-}
+    margin-top: 24px;
+    }
+
+    footer {
+        margin-bottom: 80px;
+    }
 
 }
 
