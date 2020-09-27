@@ -1,18 +1,10 @@
 /* 
-Author : Dede Iskandar
+Oleh : Dede Iskandar
 untuk Dicoding Indonesia
 
 Inspirasi style CSS
 - CSS Reset
 - Tailwind CSS, Tidak mengambil library, tapi menerapkan konsep utility nya, semua utility ditulis dan didefinisikan sendiri.
-
-* DAFTAR ISI
-- CSS Reset
-- Initial
-- Definisi Warna
-- Definisi Ukuran
-
-*/
 
 /* CSS Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
@@ -28,20 +20,27 @@ a { text-decoration: none; }
 a:visited { color: #415B81; }
 /* End of CSS Reset */
 
-/* Initial */
+/* General */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #656565;
     background-color: #F9FBFE;
 }
 
-/* // */
+img:hover {
+    filter: alpha(opacity=50);
+        opacity: 0.5;
+        -webkit-transition: opacity .15s ease-in-out;
+        -moz-transition: opacity .15s ease-in-out;
+        -ms-transition: opacity .15s ease-in-out;
+        -o-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
+    cursor: pointer;
+}
 
 /* Definisi Warna */
 .warna-utama { color: #415B81; }
-
 .bg-putih { background-color: white; }
-
 .teks-putih { color: white; }
 .teks-oren { color: #F29100; }
 .teks-hijau { color: #5CB768; }
@@ -57,6 +56,7 @@ body {
 .teks-2 { font-size: 12px; }
 .teks-1 { font-size: 10px; }
 
+/* Alignment */
 .teks-tengah { text-align: center; }
 
 /* style */
@@ -67,22 +67,22 @@ body {
 .hilang { display: none; }
 
 .flex { display: flex; }
-
 .flex-col { flex-direction: column; }
-
 .flex-1 { flex-grow: 1; }
-
 .flex-tengah { justify-content: center; }
-
 .flex-pinggir { justify-content: space-between; }
 .flex-sisi-pinggir { justify-content: space-evenly; }
 .flex-middle { align-items: center; }
 
+/* Ukuran Lebar */
 .setengah { width: 49%; }
 .satu-tiga { width: 32%; }
 .dua-tiga { width: 64%; }
 .lebar { width: 100%; }
 
+/* BATAS */
+
+/* Batas Atas */
 .ba-1 { margin-top: 4px; }
 .ba-2 { margin-top: 6px; }
 .ba-3 { margin-top: 8px; }
@@ -93,6 +93,7 @@ body {
 .ba-8 { margin-top: 30px; }
 .ba-9 { margin-top: 40px; }
 
+/* Batas Bawah */
 .bb-1 { margin-bottom: 4px; }
 .bb-2 { margin-bottom: 6px; }
 .bb-3 { margin-bottom: 8px; }
@@ -103,6 +104,7 @@ body {
 .bb-8 { margin-bottom: 30px; }
 .bb-9 { margin-bottom: 40px; }
 
+/* Batas Kanan */
 .bka-0 { margin-right: 0px; }
 .bka-1 { margin-right: 4px; }
 .bka-2 { margin-right: 6px; }
@@ -114,6 +116,7 @@ body {
 .bka-8 { margin-right: 30px; }
 .bka-9 { margin-right: 40px; }
 
+/* Batas Kiri */
 .bki-0 { margin-left: 0px; }
 .bki-1 { margin-left: 4px; }
 .bki-2 { margin-left: 6px; }
@@ -125,6 +128,10 @@ body {
 .bki-8 { margin-left: 30px; }
 .bki-9 { margin-left: 40px; }
 
+
+/* LAPISAN */
+
+/* Lapisan Atas */
 .la-0 { padding-top: 0px; }
 .la-1 { padding-top: 4px; }
 .la-2 { padding-top: 6px; }
@@ -136,6 +143,7 @@ body {
 .la-8 { padding-top: 30px; }
 .la-9 { padding-top: 40px; }
 
+/* Lapisan Bawah */
 .lb-0 { padding-bottom: 0px; }
 .lb-1 { padding-bottom: 4px; }
 .lb-2 { padding-bottom: 6px; }
@@ -147,6 +155,7 @@ body {
 .lb-8 { padding-bottom: 30px; }
 .lb-9 { padding-bottom: 40px; }
 
+/* Level Lapisan */
 .l-0 { padding: 0px; }
 .l-1 { padding: 4px; }
 .l-2 { padding: 6px; }
@@ -163,6 +172,9 @@ body {
     max-width: 1024px;
 }
 
+/* -- */
+
+/* Progress Bar */
 .progress-bar {
     width: 100%;
     background-color: #E9EFF3;
@@ -177,8 +189,9 @@ body {
 
     transition: width 500ms ease-in-out;
 }
+/* End of Progress Bar */
 
-/* Box  */
+/* Box Style  */
 .bulat {
     border-radius: 8px;
 }
@@ -186,7 +199,9 @@ body {
 .bayangan {
     box-shadow: 0 4px 8px #E8E8E8;
 }
+/* End of Box Style */
 
+/* Identitas */
 aside {
     background-color: #3A5379;
     width: 250px;
@@ -207,9 +222,19 @@ aside {
     border-top: #536A8D 1px solid;
 }
 
-.box-aside {
-    background-color: #354B6E;
-    color: #8795A9;
+#identitas {
+    display: block;
+}
+
+/* End of Identitas */
+
+/* Menu di hp */
+#menu-hp {
+    position: fixed;
+    bottom: 0;
+    background-color: #3A5379;
+    color: white;
+    width: 100%;
 }
 
 .menu a{
@@ -223,16 +248,11 @@ aside {
     color: white;
 }
 
-#menu-hp {
-    position: fixed;
-    bottom: 0;
-    background-color: #3A5379;
-    color: white;
-    width: 100%;
-}
+/* End of Menu di hp */
 
-#identitas {
-    display: block;
+/* Widget kanan */
+#widget {
+    width: 270px;
 }
 
 #kategori {
@@ -240,31 +260,7 @@ aside {
     width: 86px;
 }
 
-#widget {
-    width: 270px;
-}
-
-img:hover {
-    filter: alpha(opacity=50);
-        opacity: 0.5;
-        -webkit-transition: opacity .15s ease-in-out;
-        -moz-transition: opacity .15s ease-in-out;
-        -ms-transition: opacity .15s ease-in-out;
-        -o-transition: opacity .15s ease-in-out;
-        transition: opacity .15s ease-in-out;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 993px) {
-   #menu-hp {
-       display: none;
-   }
-
-   #identitas {
-       display: none;
-   }
-    
-}
+/* End of Widget Kanan */
 
 #semangat {
     background-color: #FCF5E3;
@@ -279,6 +275,17 @@ img:hover {
     top: -22px;
 }
 
+@media screen and (min-width: 993px) {
+   #menu-hp {
+       display: none;
+   }
+
+   #identitas {
+       display: none;
+   }
+    
+}
+
 /* mobile */
 @media screen and (max-width: 321px) {
    #notif {
@@ -286,13 +293,9 @@ img:hover {
    }
 }
 
-/* mobile */
-@media screen and (max-width: 513px) {
-   
-}
-
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+
     .container {
         padding: 24px 12px;
     }
@@ -330,14 +333,10 @@ img:hover {
     }
 
 }
-    
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-    
- }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
+
     aside
     {
         display: none;
@@ -366,12 +365,4 @@ img:hover {
     footer {
         margin-bottom: 80px;
     }
-
-    
-
 }
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-
- }
