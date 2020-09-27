@@ -273,30 +273,29 @@ aside {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    .container {
+        padding: 24px 12px;
+    }
 
-.callout {
-    text-align: center;
-}
+    .dua-tiga {
+        width: 100%;
+    }
 
-.left {
-    width: 100%;
-}
+    #semangat {
+        text-align: center;
+    }
 
-.dua-tiga {
-    width: 100%;
-}
+    .gambar-ilustrasi {
+        margin-top: 32px;
+        position: static;
+    }
 
-#semangat {
-    text-align: center;
-}
-
-.gambar-ilustrasi {
-    margin-top: 32px;
-    position: static;
-}
-
-footer {
+    footer {
         display: block !important;
+    }
+
+    .author {
+        margin-top: 8px;
     }
 
     .satu-tiga {
