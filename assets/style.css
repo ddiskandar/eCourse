@@ -75,6 +75,7 @@ body {
 
 .flex-pinggir { justify-content: space-between; }
 .flex-sisi-pinggir { justify-content: space-evenly; }
+.flex-middle { align-items: center; }
 
 .setengah { width: 49%; }
 .satu-tiga { width: 32%; }
@@ -161,6 +162,21 @@ body {
     max-width: 1024px;
 }
 
+.progress-bar {
+    width: 100%;
+    background-color: #E9EFF3;
+    height: 4px;
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 4px;
+    background-color: #5CB768;
+    border-radius: 3px;
+
+    transition: width 500ms ease-in-out;
+}
+
 /* Box  */
 .bulat {
     border-radius: 8px;
@@ -217,6 +233,10 @@ aside {
 #kategori {
     background-color: #5CB768;
     width: 86px;
+}
+
+#widget {
+    width: 270px;
 }
 
 @media screen and (min-width: 993px) {
@@ -279,6 +299,17 @@ footer {
         display: block !important;
     }
 
+    .satu-tiga {
+        width: 100%;
+    } 
+    .setengah {
+        width: 100%;
+    } 
+
+    .card {
+        display: block;
+    }
+
 }
     
 /* Small devices (landscape phones, less than 768px) */
@@ -310,11 +341,14 @@ footer {
     #widget {
     margin-left: 0;
     margin-top: 24px;
+    width: 100%;
     }
 
     footer {
         margin-bottom: 80px;
     }
+
+    
 
 }
 
