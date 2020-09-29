@@ -253,9 +253,12 @@ aside {
 
 /* End of Menu di hp */
 
-/* Widget kanan */
+#main-content {
+    width: 70%;
+}
+
 #widget {
-    width: 270px;
+    width: 30%;
 }
 
 #kategori {
@@ -352,23 +355,21 @@ aside {
         display: none;
     }
 
-    main {
+    #content {
         flex-direction: column;
-    }
-
-    .widget {
-        margin-top: 24px;
-        margin-left: 0;
-        width: 50%;
     }
         
     .notif {
         margin-left: 0;
     }
 
-    #widget {
-    margin-left: 0;
-    margin-top: 24px;
+    #main-content {
     width: 100%;
+}
+
+    #widget {
+        margin-left: 0;
+        margin-top: 24px;
+        width: 100%;
     }
 }
