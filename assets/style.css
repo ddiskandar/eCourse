@@ -203,8 +203,12 @@ img:hover {
 /* End of Box Style */
 
 /* Identitas */
+.content-wrapper {
+    order: 2;
+}
 
 aside {
+    order: 1;
     background-color: #354B6E;
     min-width: 250px;
     min-height: 100vh;
@@ -226,7 +230,8 @@ aside {
 }
 
 #identitas {
-    display: block;
+    background-color: #354B6E;
+    /* display: block; */
 }
 
 /* End of Identitas */
