@@ -28,7 +28,6 @@ header {
     color: white;
 }
 
-
 img:hover {
     filter: alpha(opacity=50);
         opacity: 0.5;
@@ -260,7 +259,6 @@ aside {
 
 #main-content {
     width: 70%;
-
 }
 
 #widget {
@@ -286,7 +284,6 @@ aside {
     right: 12px;
     top: -22px;
 }
-
 
 @media screen and (min-width: 993px) {
     .brand, .separator {
@@ -364,11 +361,15 @@ aside {
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 768px) { 
 
     aside
     {
         display: none;
+    }
+
+    #identitas {
+        display: block;
     }
 
     #content {
@@ -384,8 +385,8 @@ aside {
     }
 
     #main-content {
-    width: 100%;
-}
+        width: 100%;
+    }
 
     #widget {
         margin-left: 0;
