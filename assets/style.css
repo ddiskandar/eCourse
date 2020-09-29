@@ -206,7 +206,7 @@ img:hover {
 
 aside {
     background-color: #354B6E;
-    width: 250px;
+    min-width: 250px;
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -255,6 +255,7 @@ aside {
 
 #main-content {
     width: 70%;
+
 }
 
 #widget {
@@ -281,6 +282,7 @@ aside {
     top: -22px;
 }
 
+
 @media screen and (min-width: 993px) {
     .brand {
         background-color: #314562;
@@ -296,7 +298,7 @@ aside {
    #identitas {
        display: none;
    }
-    
+
 }
 
 /* mobile */
@@ -326,9 +328,7 @@ aside {
         position: static;
     }
 
-    footer {
-        display: block !important;
-    }
+    
 
     .author {
         margin-top: 8px;
@@ -363,6 +363,10 @@ aside {
         margin-left: 0;
     }
 
+    .content-wrapper {
+        padding: 12px;
+    }
+
     #main-content {
     width: 100%;
 }
@@ -372,4 +376,16 @@ aside {
         margin-top: 24px;
         width: 100%;
     }
+
+    .separator {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        display: block !important;
+        margin-top: 12px;
+        margin-bottom: 120px;
+    }
+
 }
