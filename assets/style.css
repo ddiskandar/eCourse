@@ -27,6 +27,12 @@ body {
     background-color: #F9FBFE;
 }
 
+header {
+    background-color: #3A5379;
+    color: white;
+}
+
+
 img:hover {
     filter: alpha(opacity=50);
         opacity: 0.5;
@@ -167,9 +173,8 @@ img:hover {
 .l-8 { padding: 30px; }
 .l-9 { padding: 40px; }
 
-.container {
+.wrapper {
     position: relative;
-    max-width: 1024px;
 }
 
 /* -- */
@@ -202,10 +207,12 @@ img:hover {
 /* End of Box Style */
 
 /* Identitas */
+
 aside {
-    background-color: #3A5379;
+    background-color: #354B6E;
     width: 250px;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .avatar img{
@@ -214,7 +221,7 @@ aside {
     object-fit: cover;
     border-radius: 100%;
     object-position: top;
-    border: #354B6E 16px solid;
+    border:  #314562 16px solid;
     margin: 24px 0;
 }
 
@@ -276,6 +283,13 @@ aside {
 }
 
 @media screen and (min-width: 993px) {
+    .brand {
+        background-color: #314562;
+        margin-left: 0 !important;
+        width: 250px;
+        box-sizing: border-box;
+    }
+
    #menu-hp {
        display: none;
    }
@@ -360,9 +374,5 @@ aside {
     margin-left: 0;
     margin-top: 24px;
     width: 100%;
-    }
-
-    footer {
-        margin-bottom: 80px;
     }
 }
