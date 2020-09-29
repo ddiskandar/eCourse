@@ -284,7 +284,7 @@ aside {
 
 
 @media screen and (min-width: 993px) {
-    .brand {
+    .brand, .separator {
         background-color: #314562;
         margin-left: 0 !important;
         width: 250px;
@@ -297,6 +297,19 @@ aside {
 
    #identitas {
        display: none;
+   }
+
+   footer {
+       box-shadow: #E8E8E8 0px -3px 16px;
+       background-color: #fff;
+   }
+
+   #copyright {
+       margin-left: 24px;
+   }
+
+   #author {
+       margin-right: 24px;
    }
 
 }
@@ -328,9 +341,7 @@ aside {
         position: static;
     }
 
-    
-
-    .author {
+    #author {
         margin-top: 8px;
     }
 
